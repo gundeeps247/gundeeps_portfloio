@@ -928,6 +928,13 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.project-desc {
+  margin: 0 1rem 1rem;
+  color: rgb(85, 85, 85);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 /* CONTACT */
 
 #contact {
