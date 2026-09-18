@@ -2,505 +2,213 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="description" content="Gundeep Singh is an AI and data science engineer building reliable intelligent systems and polished web products." />
+    <meta name="theme-color" content="#101916" />
+    <title>Gundeep Singh — AI &amp; Data Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <!-- Include Typed.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Gundeep Singh</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Gundeep Singh</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Gundeep Singh</h1>
-        <p class="section__text__p2 typed-container"><span class="typed-text"></span></p> <!-- Add class for typed effect -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/gundeepsm/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/gundeeps247'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1 fade">Get To Know More</p>
-      <h1 class="title fade">About Me</h1>
-      <div class="section-container fade">
-          <div class="section__pic-container fade">
-              <img
-                  src="./assets/about-pic.png"
-                  alt="Profile picture"
-                  class="about-pic"
-              />
-          </div>
-          <div class="about-details-container fade">
-              <div class="about-containers fade">
-                  <div class="details-container fade">
-                      <img
-                          src="./assets/experience.png"
-                          alt="Experience icon"
-                          class="icon"
-                      />
-                      <h3>Experience</h3>
-                      <p>AI &amp; Full Stack <br />Engineering</p>
-                  </div>
-                  <div class="details-container fade">
-                      <img
-                          src="./assets/education.png"
-                          alt="Education icon"
-                          class="icon"
-                      />
-                      <h3>Education</h3>
-                      <p>PGP in AI &amp; Data Science, Jio Institute <br />B.Tech Computer Science</p>
-                  </div>
-              </div>
-              <div class="text-container fade">
-                  <p>
-                    I build AI systems and the web products around them, and I am currently studying for a PGP in AI &amp; Data Science at Jio Institute. As a live project with Godrej, I built a human-supervised data analyst agent that turns plain-language questions into validated, read-only SQL or Pandas, with every capability discovered over the Model Context Protocol and every headline figure independently recomputed before it is shown. I also ran an independent reliability study of a CVPR 2025 segmentation model across 499 images, measuring where a strong average score still hides catastrophic failures, and built ResumeRAG, an interview-prep tool whose entire retrieval pipeline — parsing, embeddings, hybrid search and reranking — runs in the browser so documents never leave the device. Through YonoSol I design and ship client websites and small products, including a browser-first file-tools suite, a notebook-to-PDF converter and an online store. Earlier work was mostly full stack: College Connect and Health Matrix on the MERN stack, a machine-learning fake-news classifier, and hackathons such as TechHack 4.0.
-                  </p>
-              </div>
-          </div>
-      </div>
-      <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-      />
-  </section>
-  
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="experience-details-container">
-      <!-- First Column: AI, Machine Learning & Data -->
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">AI, Machine Learning & Data</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Python</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>LangChain & RAG</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>PyTorch</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Model Context Protocol</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Pandas & NumPy</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>scikit-learn</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SQL & SQLite</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Streamlit</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-
-      <!-- Second Column: Web, Backend & Tooling -->
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Web, Backend & Tooling</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React & Next.js</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node.js & Express</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Flask</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML, CSS & Tailwind</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git, GitHub & Vercel</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  
-  
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-          <div class="projects-grid">
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-8.png" alt="ResumeRAG answer with citations and pipeline trace" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">RESUMERAG</h2>
-              <p class="project-desc">Interview prep grounded in your own documents: an in-browser RAG pipeline (semantic + BM25 search, reranking, citation checks) with mock interviews and JD matching. Next.js, TypeScript, Transformers.js, Ollama.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/gundeeps247/resumerag'">Github</button>
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://resumerag-gold.vercel.app/'">Live Demo</button>
-              </div>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-9.png" alt="Agnostic Data Analyst Agent interface" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">DATA ANALYST AGENT</h2>
-              <p class="project-desc">Godrej live project: a human-supervised AI analyst that turns plain-language questions into validated, read-only SQL or Pandas, with its tools discovered over the Model Context Protocol. Python, MCP, Streamlit.</p>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-10.png" alt="STT-B Reliability Benchmark website" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">STT-B RELIABILITY BENCHMARK</h2>
-              <p class="project-desc">Independent evaluation of the CVPR 2025 Segment This Thing model on 499 images: accuracy, robustness, calibration and a speed comparison with SAM. PyTorch.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/gundeeps247/stt-b-reliability-benchmark'">Github</button>
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://stt-b-reliability-benchmark.vercel.app/'">Live Demo</button>
-              </div>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-13.png" alt="Modbox website" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">MODBOX</h2>
-              <p class="project-desc">35 browser-first file tools for PDFs, images, documents, audio and video: convert, compress, edit and merge with as much processing on your device as possible. Installable web app. React.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://modbox.yonosol.com/'">Live Demo</button>
-              </div>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-14.png" alt="nb2pdf website" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">NB2PDF</h2>
-              <p class="project-desc">Converts Jupyter notebooks to clean PDFs entirely in the browser, with a live preview and export settings. No server, no upload. JavaScript.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://nb2pdf.yonosol.com/'">Live Demo</button>
-              </div>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-15.png" alt="Savely website" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">SAVELY</h2>
-              <p class="project-desc">Media downloader for YouTube videos, MP3 audio, Shorts and whole playlists, with a Node.js backend that fetches, converts and packages the files. React, Express, FFmpeg.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://savely.yonosol.com/'">Live Demo</button>
-              </div>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-11.png" alt="YonoSol website" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">YONOSOL WEBSITE</h2>
-              <p class="project-desc">Website for YonoSol, my digital services brand: services, pricing, blog, user accounts and Razorpay payments. React, Node.js, MongoDB.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.yonosol.com/'">Live Demo</button>
-              </div>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-16.jpg" alt="Floor and Decor store" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">FLOOR &amp; DECOR</h2>
-              <p class="project-desc">Full-stack home decor store with a product catalogue, cart, wishlist, cash-on-delivery checkout, customer accounts and an admin panel. React, Node.js, Express, MongoDB.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://fnd.yonosol.com/'">Live Demo</button>
-              </div>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-12.png" alt="Spectrum Compass app" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">SPECTRUM COMPASS</h2>
-              <p class="project-desc">Privacy-friendly web app for reflecting on autism traits through ten everyday statements, for yourself or someone you support. A reflection, not a diagnosis. Flask.</p>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-17.png" alt="Qlippr online clipboard" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">QLIPPR</h2>
-              <p class="project-desc">Online clipboard: save text on one device and retrieve it on another with an OTP, no sign-up needed.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://clipboardlive.vercel.app/'">Live Demo</button>
-              </div>
-          </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                  <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">HEALTH MATRIX</h2>
-              <p class="project-desc">Healthcare management platform with analytics and secure workflows.</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://health-matrix.onrender.com/'">Live Demo</button>
-              </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-                <img src="./assets/project-7.png" alt="Project 7" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">DSA VISUALIZER </h2>
-            <p class="project-desc">Interactive data structures and algorithms visualizations.</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://dsavizhub.vercel.app/'">Live Demo</button>
-            </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-              <img src="./assets/project-5.png" alt="Project 4" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">REAL-TIME CHAT APPLICATION</h2>
-          <p class="project-desc">WebSocket-based messaging with presence and delivery states.</p>
-          <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://chat-psi-jet.vercel.app/'">Live Demo</button>
-          </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-        </div>
-        <h2 class="experience-sub-title project-title">FAKE NEWS DETECTION</h2>
-        <p class="project-desc">ML-driven verification workflow for content authenticity.</p>
-    </div>
-    <div class="details-container color-container">
-      <div class="article-container">
-          <img src="./assets/project-4.png" alt="Project 5" class="project-img" />
-      </div>
-      <h2 class="experience-sub-title project-title">ONLINE MEETING APP</h2>
-      <p class="project-desc">Video conferencing experience with modern UI.</p>
-      <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/gundeeps247/edconnect-meeting'">Github</button>
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://edconnect-meeting.vercel.app/'">Live Demo</button>
-      </div>
-  </div>
-              <div class="details-container color-container">
-                  <div class="article-container">
-                      <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-                  </div>
-                  <h2 class="experience-sub-title project-title">COLLEGE CONNECT</h2>
-                  <p class="project-desc">Campus community platform for students and clubs.</p>
-                  <div class="btn-container">
-                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/gundeeps247/Academics'">Github</button>
-                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://edconnect-dashboard.vercel.app/'">Live Demo</button>
-                  </div>
-              </div>
-          
-              
-            
-
-          </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">gundeepsinghm@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/gundeepsm/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Gundeep Singh, home">
+        <span class="wordmark-mark">GS</span><span>Gundeep Singh</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#projects">Work</a><a href="#experience">Expertise</a><a href="#about">About</a><a href="#contact">Contact</a>
       </nav>
-      <p>Copyright &#169; 2023 Gundeep Singh. All Rights Reserved.</p>
+      <a class="header-cta" href="./assets/resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> AI · Data Science · Product Engineering</p>
+          <h1>I build intelligent systems that <em>earn trust.</em></h1>
+          <p class="hero-intro">I’m Gundeep—an AI and data science engineer focused on reliable agents, retrieval systems, model evaluation, and the web products that make them useful.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore AI work <span>↓</span></a>
+            <a class="button button-secondary" href="mailto:gundeepsinghm@gmail.com">Let’s talk <span>↗</span></a>
+          </div>
+          <div class="availability"><span class="pulse" aria-hidden="true"></span>Open to AI / ML engineering opportunities</div>
+        </div>
+        <div class="hero-visual reveal" style="--delay: 120ms">
+          <div class="portrait-frame">
+            <div class="portrait-grid" aria-hidden="true"></div>
+            <img src="./assets/profile-pic-optimized.jpg" alt="Portrait of Gundeep Singh" />
+            <span class="portrait-label">Based in India · Building globally</span>
+          </div>
+          <div class="signal-card signal-card-top"><span class="signal-index">01</span><strong>Human-supervised AI</strong><small>Safe by design</small></div>
+          <div class="signal-card signal-card-bottom"><span class="signal-index">02</span><strong>499 images</strong><small>Reliability benchmarked</small></div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Core technologies">
+        <div class="ticker-track"><span>Python</span><i>✦</i><span>PyTorch</span><i>✦</i><span>RAG</span><i>✦</i><span>Model Context Protocol</span><i>✦</i><span>SQL</span><i>✦</i><span>Next.js</span></div>
+      </section>
+
+      <section class="featured-section shell" id="projects">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span></span> Featured case studies</p><h2>AI &amp; data work,<br />front and center.</h2></div>
+          <p>From agentic analytics to in-browser retrieval and model reliability—these projects show how I approach applied AI beyond the demo.</p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="featured-card featured-card-wide reveal">
+            <div class="featured-media"><img src="./assets/project-9.png" alt="Data Analyst Agent interface showing a natural language analysis workflow" /><span class="project-number">01</span></div>
+            <div class="featured-content">
+              <div class="project-meta"><span>Agentic AI</span><span>Godrej live project</span></div>
+              <h3>Data Analyst Agent</h3>
+              <p>A human-supervised analyst that turns plain-language questions into validated, read-only SQL or Pandas. Tools are discovered through MCP, while headline figures are independently recomputed before display.</p>
+              <ul class="tag-list" aria-label="Technologies"><li>Python</li><li>MCP</li><li>SQL</li><li>Streamlit</li></ul>
+              <p class="project-note">Private client engagement</p>
+            </div>
+          </article>
+
+          <article class="featured-card reveal" style="--delay: 80ms">
+            <div class="featured-media"><img src="./assets/project-8.png" alt="ResumeRAG response with source citations and retrieval trace" /><span class="project-number">02</span></div>
+            <div class="featured-content">
+              <div class="project-meta"><span>RAG</span><span>Privacy-first</span></div>
+              <h3>ResumeRAG</h3>
+              <p>Interview preparation grounded in your own documents. Parsing, hybrid search, reranking, and citation checks all run inside the browser.</p>
+              <ul class="tag-list" aria-label="Technologies"><li>Next.js</li><li>Transformers.js</li><li>Ollama</li></ul>
+              <div class="project-links"><a href="https://resumerag-gold.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/gundeeps247/resumerag" target="_blank" rel="noopener">GitHub ↗</a></div>
+            </div>
+          </article>
+
+          <article class="featured-card reveal" style="--delay: 160ms">
+            <div class="featured-media"><img src="./assets/project-10.png" alt="STT-B Reliability Benchmark dashboard with model evaluation results" /><span class="project-number">03</span></div>
+            <div class="featured-content">
+              <div class="project-meta"><span>Computer vision</span><span>Evaluation</span></div>
+              <h3>STT-B Reliability Benchmark</h3>
+              <p>An independent evaluation of a CVPR 2025 segmentation model across 499 images, measuring robustness, calibration, speed, and failure modes hidden by averages.</p>
+              <ul class="tag-list" aria-label="Technologies"><li>PyTorch</li><li>Segmentation</li><li>Calibration</li></ul>
+              <div class="project-links"><a href="https://stt-b-reliability-benchmark.vercel.app/" target="_blank" rel="noopener">View study ↗</a><a href="https://github.com/gundeeps247/stt-b-reliability-benchmark" target="_blank" rel="noopener">GitHub ↗</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="work-section shell" aria-labelledby="more-work-title">
+        <div class="work-heading reveal">
+          <div><p class="eyebrow"><span></span> Selected builds</p><h2 id="more-work-title">More work</h2></div>
+          <div class="project-filters" role="group" aria-label="Filter projects">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button><button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI / ML</button><button class="filter-button" type="button" data-filter="product" aria-pressed="false">Products</button><button class="filter-button" type="button" data-filter="fullstack" aria-pressed="false">Full stack</button>
+          </div>
+        </div>
+
+        <div class="project-grid" data-project-grid>
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-image-link"><img src="./assets/project-3.png" alt="Fake News Detection interface" /></div>
+            <div class="project-card-body"><div class="project-meta"><span>Machine learning</span><span>04</span></div><h3>Fake News Detection</h3><p>ML-driven text classification workflow for evaluating content authenticity.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="product">
+            <a class="project-image-link" href="https://modbox.yonosol.com/" target="_blank" rel="noopener"><img src="./assets/project-13.png" alt="Modbox browser file tools dashboard" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Browser product</span><span>05</span></div><h3><a href="https://modbox.yonosol.com/" target="_blank" rel="noopener">Modbox ↗</a></h3><p>35 privacy-minded tools to convert, compress, edit, and merge files in the browser.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="product">
+            <a class="project-image-link" href="https://nb2pdf.yonosol.com/" target="_blank" rel="noopener"><img src="./assets/project-14.png" alt="NB2PDF notebook conversion interface" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Developer tool</span><span>06</span></div><h3><a href="https://nb2pdf.yonosol.com/" target="_blank" rel="noopener">NB2PDF ↗</a></h3><p>Clean notebook-to-PDF conversion with live preview, entirely on-device.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="product fullstack">
+            <a class="project-image-link" href="https://savely.yonosol.com/" target="_blank" rel="noopener"><img src="./assets/project-15.png" alt="Savely media utility interface" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Media utility</span><span>07</span></div><h3><a href="https://savely.yonosol.com/" target="_blank" rel="noopener">Savely ↗</a></h3><p>A React and FFmpeg-powered workflow for video, audio, Shorts, and playlists.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack">
+            <a class="project-image-link" href="https://www.yonosol.com/" target="_blank" rel="noopener"><img src="./assets/project-11.png" alt="YonoSol digital services website" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Business platform</span><span>08</span></div><h3><a href="https://www.yonosol.com/" target="_blank" rel="noopener">YonoSol ↗</a></h3><p>Services, pricing, publishing, user accounts, and payments for a digital studio.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack">
+            <a class="project-image-link" href="https://fnd.yonosol.com/" target="_blank" rel="noopener"><img src="./assets/project-16.jpg" alt="Floor and Decor ecommerce storefront" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Ecommerce</span><span>09</span></div><h3><a href="https://fnd.yonosol.com/" target="_blank" rel="noopener">Floor &amp; Decor ↗</a></h3><p>A full-stack store with catalogue, cart, wishlist, checkout, accounts, and admin tools.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="product">
+            <div class="project-image-link"><img src="./assets/project-12.png" alt="Spectrum Compass reflection interface" /></div>
+            <div class="project-card-body"><div class="project-meta"><span>Health product</span><span>10</span></div><h3>Spectrum Compass</h3><p>A privacy-friendly guided reflection on autism traits—designed as a prompt, not a diagnosis.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="product fullstack">
+            <a class="project-image-link" href="https://clipboardlive.vercel.app/" target="_blank" rel="noopener"><img src="./assets/project-17.png" alt="Qlippr online clipboard interface" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Utility</span><span>11</span></div><h3><a href="https://clipboardlive.vercel.app/" target="_blank" rel="noopener">Qlippr ↗</a></h3><p>Move text between devices using a one-time code—no account required.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack">
+            <a class="project-image-link" href="https://health-matrix.onrender.com/" target="_blank" rel="noopener"><img src="./assets/project-6.png" alt="Health Matrix healthcare dashboard" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Healthcare</span><span>12</span></div><h3><a href="https://health-matrix.onrender.com/" target="_blank" rel="noopener">Health Matrix ↗</a></h3><p>Healthcare management platform with analytics and secure operational workflows.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="product">
+            <a class="project-image-link" href="https://dsavizhub.vercel.app/" target="_blank" rel="noopener"><img src="./assets/project-7.png" alt="Data structures visualizer interface" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Education</span><span>13</span></div><h3><a href="https://dsavizhub.vercel.app/" target="_blank" rel="noopener">DSA Visualizer ↗</a></h3><p>Interactive visual explanations for core data structures and algorithms.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack">
+            <a class="project-image-link" href="https://chat-psi-jet.vercel.app/" target="_blank" rel="noopener"><img src="./assets/project-5.png" alt="Real-time chat application" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Realtime</span><span>14</span></div><h3><a href="https://chat-psi-jet.vercel.app/" target="_blank" rel="noopener">Chat Application ↗</a></h3><p>WebSocket messaging with presence, responsive conversations, and delivery states.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack">
+            <a class="project-image-link" href="https://edconnect-meeting.vercel.app/" target="_blank" rel="noopener"><img src="./assets/project-4.png" alt="Online meeting application" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Communication</span><span>15</span></div><h3><a href="https://edconnect-meeting.vercel.app/" target="_blank" rel="noopener">Meeting App ↗</a></h3><p>A focused video-conferencing experience for browser-based collaboration.</p></div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack">
+            <a class="project-image-link" href="https://edconnect-dashboard.vercel.app/" target="_blank" rel="noopener"><img src="./assets/project-1.png" alt="College Connect campus dashboard" /></a>
+            <div class="project-card-body"><div class="project-meta"><span>Community</span><span>16</span></div><h3><a href="https://edconnect-dashboard.vercel.app/" target="_blank" rel="noopener">College Connect ↗</a></h3><p>A campus community platform connecting students, clubs, and academic resources.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="expertise-section" id="experience">
+        <div class="shell">
+          <div class="section-heading section-heading-light reveal">
+            <div><p class="eyebrow"><span></span> Technical range</p><h2>Research depth.<br />Product instincts.</h2></div>
+            <p>I work across the stack so promising models become dependable tools—not isolated notebooks.</p>
+          </div>
+          <div class="expertise-grid">
+            <article class="expertise-card reveal"><span class="expertise-index">01</span><h3>AI &amp; machine learning</h3><p>Reliable LLM workflows, computer vision evaluation, classical ML, and human-in-the-loop systems.</p><ul><li>PyTorch</li><li>scikit-learn</li><li>LangChain</li><li>Transformers</li></ul></article>
+            <article class="expertise-card reveal" style="--delay: 80ms"><span class="expertise-index">02</span><h3>Data &amp; retrieval</h3><p>Grounded answers, measurable retrieval, analytical agents, and defensible data transformations.</p><ul><li>Python</li><li>Pandas / NumPy</li><li>SQL</li><li>RAG / reranking</li></ul></article>
+            <article class="expertise-card reveal" style="--delay: 160ms"><span class="expertise-index">03</span><h3>Product engineering</h3><p>Responsive interfaces and production backends that make complex capability feel approachable.</p><ul><li>TypeScript</li><li>React / Next.js</li><li>Node / Express</li><li>MongoDB</li></ul></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section shell" id="about">
+        <div class="about-image reveal"><img src="./assets/about-pic-optimized.jpg" alt="Gundeep Singh working at a desk" loading="lazy" /><span class="image-caption">Engineer · Researcher · Builder</span></div>
+        <div class="about-copy reveal" style="--delay: 100ms">
+          <p class="eyebrow"><span></span> About me</p><h2>Curious about the model.<br />Obsessed with the outcome.</h2>
+          <p>I’m pursuing a PGP in AI &amp; Data Science at Jio Institute after a B.Tech in Computer Science. My work sits where evaluation, reliable system design, and thoughtful user experience meet.</p>
+          <p>Through YonoSol, I also design and ship products for real clients. That experience keeps my AI work practical: I care about privacy, failure states, maintainability, and whether the person on the other side can actually use what I build.</p>
+          <div class="about-facts"><div><strong>PGP</strong><span>AI &amp; Data Science<br />Jio Institute</span></div><div><strong>B.Tech</strong><span>Computer Science<br />Engineering</span></div></div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="shell contact-inner reveal">
+          <p class="eyebrow"><span></span> Have an ambitious problem?</p><h2>Let’s build something<br /><em>worth trusting.</em></h2>
+          <a class="contact-email" href="mailto:gundeepsinghm@gmail.com">gundeepsinghm@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-links"><a href="https://www.linkedin.com/in/gundeepsm/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/gundeeps247" target="_blank" rel="noopener">GitHub ↗</a><a href="./assets/resume.pdf" target="_blank" rel="noopener">Resume ↗</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <a class="wordmark" href="#top"><span class="wordmark-mark">GS</span><span>Gundeep Singh</span></a><p>AI, data, and product engineering.</p><p>© <span data-year></span> Gundeep Singh</p>
     </footer>
     <script src="script.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          var typed = new Typed('.typed-text', {
-              strings: ["An AI Engineer.", "A Full Stack Developer.", "A Machine Learning Practitioner.", "A Problem Solver."],
-              typeSpeed: 50,
-              backSpeed: 50,
-              loop: true
-          });
-      });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Function to add 'visible' class when element is in viewport
-        function handleFade() {
-            var elements = document.querySelectorAll('.fade');
-            var windowHeight = window.innerHeight;
-
-            elements.forEach(function(element) {
-                var elementTop = element.getBoundingClientRect().top;
-                var elementBottom = element.getBoundingClientRect().bottom;
-
-                if (elementTop < windowHeight - 100 && elementBottom > 100) {
-                    element.classList.add('visible');
-                } else {
-                    element.classList.remove('visible');
-                }
-            });
-        }
-
-        // Add scroll event listener
-        window.addEventListener('scroll', handleFade);
-
-        // Initial check
-        handleFade();
-    });
-</script>
-
-
   </body>
 </html>
